@@ -1,0 +1,18 @@
+{
+    "name": "growcode/module-fouc",
+    "description": "Module which prevents 'Flash Of Unstyled Content' when critical css is used",
+    "type": "magento2-module",
+    "license": "GPL-3.0",
+    "minimum-stability": "dev",
+    "require": {
+        "magento/framework": "*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Growcode\\Fouc\\": ""
+        }
+    }
+}
