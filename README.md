@@ -17,9 +17,10 @@ Assuming You have access to Growcode's 'Magento 2 Modules' project on bitbucket 
 
 2. You need to perform manual action in Backend -> Content -> Design -> Configuration -> here You need to choose desired scope and append following code:
    ```css
-    <style type="text/css">
-    .no-fouc {display: none;}
-    </style>
+    <style>.no-fouc {display: none;}</style>
+    <noscript>
+        <style>.no-fouc {display: block !important;}</style>
+    </noscript>
    ```
 
 under 'Other Settings' -> 'HTML Head' -> 'Scripts and Style Sheets' field. 
