@@ -1,0 +1,21 @@
+<?php
+/**
+ * @var \Magento\Framework\View\Element\Template $block
+ * @var \Magento\Framework\View\Helper\SecureHtmlRenderer $secureRenderer
+ */
+?>
+<?php
+$styleStringJs = <<<style
+    .no-fouc {display: none;}
+style;
+
+$styleStringNoJs = <<<style
+    .no-fouc {display: block !important;}
+style;
+?>
+
+<?= /* @noEscape */ $secureRenderer->renderTag('style', [], $styleStringJs, false); ?>
+
+<noscript>
+    <?= /* @noEscape */ $secureRenderer->renderTag('style', [], $styleStringNoJs, false); ?>
+</noscript>

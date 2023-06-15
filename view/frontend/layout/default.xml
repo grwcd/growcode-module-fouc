@@ -6,8 +6,12 @@
 
         <referenceBlock name="head.additional">
             <block class="Magento\Framework\View\Element\Template"
-                   name="fouc.prevent"
-                   template="Growcode_Fouc::html/head/fouc.phtml" />
+                   name="fouc.styles"
+                   template="Growcode_Fouc::html/head/fouc-styles.phtml" />
+
+            <block class="Magento\Framework\View\Element\Template"
+                   name="fouc.js"
+                   template="Growcode_Fouc::html/head/fouc-js.phtml" />
         </referenceBlock>
     </body>
 </page>

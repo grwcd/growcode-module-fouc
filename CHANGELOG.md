@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 ### Fixed
 
+## [100.4.6] - 2023-06-03
+### Changed
+- Changed the way that styles are added - manual action isn't required anymore
+
 ## [100.4.4] - 2022-09-23
 ### Added
 - Initial module setup
